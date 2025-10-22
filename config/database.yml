@@ -22,11 +22,7 @@ test:
   <<: *default
   database: trueblack_api_test
 
-
 production:
   <<: *default
-  database: trueblack_api_production
   url: <%= ENV['DATABASE_URL'] %>
-  username: <%= ENV['PG_USERNAME'] || 'postgres' %>
-  password: <%= ENV['PG_PASSWORD'] %>
-  host: <%= ENV['PG_HOST'] || 'localhost' %>
+
