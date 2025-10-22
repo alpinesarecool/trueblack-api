@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 8.0.3"
-gem "sqlite3", ">= 2.1"
+gem "pg", ">= 1.1"
+# gem "sqlite3", ">= 2.1" # Commented out to switch to PostgreSQL
 gem "puma", ">= 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -12,6 +13,7 @@ gem "puma", ">= 5.0"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "solid_queue"
 gem "solid_cable"
+gem "solid_cache"
 gem "bootsnap", require: false
 
 # Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
