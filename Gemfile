@@ -26,6 +26,7 @@ gem "thruster", require: false
 # gem "rack-cors"
 
 gem 'graphql'
+gem 'graphiql-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -34,7 +35,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'graphiql-rails'
   gem 'solid_cache'
   gem 'solid_queue'
 end
