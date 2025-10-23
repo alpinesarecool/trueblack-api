@@ -25,16 +25,16 @@ gem "thruster", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
-gem 'graphql'
-gem 'graphiql-rails'
+gem "graphql"
+gem "graphiql-rails"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
-  gem 'faker'
-  gem 'solid_cache'
-  gem 'solid_queue'
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "solid_cache"
+  gem "solid_queue"
 end
