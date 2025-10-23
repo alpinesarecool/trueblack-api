@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 8.0.3"
+gem "rails", "~> 8.1.0"
 gem "pg", ">= 1.1"
 # gem "sqlite3", ">= 2.1" # Commented out to switch to PostgreSQL
 gem "puma", ">= 5.0"
