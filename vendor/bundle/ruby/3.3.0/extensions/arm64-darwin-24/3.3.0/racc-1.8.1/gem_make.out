@@ -1,0 +1,18 @@
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/teja/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-x2jcdp sitelibdir\=./.gem.20251111-76818-x2jcdp clean
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-x2jcdp sitelibdir\=./.gem.20251111-76818-x2jcdp
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-x2jcdp sitelibdir\=./.gem.20251111-76818-x2jcdp install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20251111-76818-x2jcdp/racc
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-x2jcdp sitelibdir\=./.gem.20251111-76818-x2jcdp clean

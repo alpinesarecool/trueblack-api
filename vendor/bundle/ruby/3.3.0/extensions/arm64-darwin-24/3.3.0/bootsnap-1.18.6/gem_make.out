@@ -1,0 +1,22 @@
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+/Users/teja/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-fsasvq sitelibdir\=./.gem.20251111-76818-fsasvq clean
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-fsasvq sitelibdir\=./.gem.20251111-76818-fsasvq
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-fsasvq sitelibdir\=./.gem.20251111-76818-fsasvq install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20251111-76818-fsasvq/bootsnap
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20251111-76818-fsasvq sitelibdir\=./.gem.20251111-76818-fsasvq clean
