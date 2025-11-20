@@ -27,5 +27,10 @@ module Types
     def test_field
       "Hello World!"
     end
+    field :stores, [Types::StoreType], null: false,
+      description: "Returns a list of all stores"
+    def stores
+      Store.all.includes(categories: :menu_items)
+    end
   end
 end
