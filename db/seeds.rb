@@ -204,15 +204,15 @@ stores.each do |store|
       # Default slug strategy: "Long Black" -> "long-black.jpg"
       slug = item_data[:name].downcase.gsub(' ', '-')
       filename = filename_mapping[item_data[:name]] || "#{slug}.jpg"
-      
+
       # Check if file exists in public/images/menu (relative to Rails root)
       # Note: In production, this check runs on the server filesystem
       file_path = Rails.root.join('public', 'images', 'menu', filename)
-      
+
       # Base URL for the production server
       base_url = "https://trueblack-api-production.up.railway.app/images/menu"
-      
-      # If file exists (or we have a mapping which implies we expect it), use it. 
+
+      # If file exists (or we have a mapping which implies we expect it), use it.
       # Otherwise fallback to nil or a default.
       # For now, we assume if it's in the mapping or the slug matches a file, it's good.
       image_url = "#{base_url}/#{filename}"
@@ -222,17 +222,17 @@ stores.each do |store|
         item.price = item_data[:price]
         item.image_url = image_url
         item.is_available = true
-        
+
         # Determine if veg or non-veg
         # Simple logic: if name/description contains chicken, egg, ham, pepperoni, etc -> non-veg
         # But exclude 'eggless'
-        non_veg_keywords = ['chicken', 'egg', 'ham', 'pepperoni', 'bacon', 'fish', 'prawn', 'shrimp']
+        non_veg_keywords = [ 'chicken', 'egg', 'ham', 'pepperoni', 'bacon', 'fish', 'prawn', 'shrimp' ]
         text_to_check = "#{item_data[:name]} #{item_data[:description]}".downcase
-        
-        is_non_veg = non_veg_keywords.any? do |keyword| 
+
+        is_non_veg = non_veg_keywords.any? do |keyword|
           text_to_check.include?(keyword) && !text_to_check.include?('eggless')
         end
-        
+
         item.is_veg = !is_non_veg
         item.save!
       end
