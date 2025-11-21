@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :stores, only: [ :index, :show ]
       resources :menu_items, only: [ :show ]
+      resources :orders, only: [:create, :index]
     end
   end
 end
