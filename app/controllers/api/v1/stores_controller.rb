@@ -10,7 +10,7 @@ module Api
         store = Store.find(params[:id])
         render json: store, include: { categories: { include: :menu_items } }
       rescue ActiveRecord::RecordNotFound
-        render json: { error: 'Store not found' }, status: :not_found
+        render json: { error: "Store not found" }, status: :not_found
       end
     end
   end

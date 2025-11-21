@@ -11,7 +11,7 @@ gem "kamal", require: false
 
 gem "thruster", require: false
 
-gem 'bcrypt', '~> 3.1.7'
+gem "bcrypt", "~> 3.1.7"
 
 gem "graphql"
 gem "graphiql-rails"

@@ -5,7 +5,7 @@ module Resolvers
       argument :password, String, required: true
 
       field :token, String, null: true
-      field :errors, [String], null: false
+      field :errors, [ String ], null: false
 
       def resolve(email:, password:)
         user = User.find_by(email: email)
@@ -13,7 +13,7 @@ module Resolvers
           token = "example_token"
           { token: token, errors: [] }
         else
-          { token: nil, errors: ["Invalid email or password"] }
+          { token: nil, errors: [ "Invalid email or password" ] }
         end
       end
     end

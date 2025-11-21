@@ -164,23 +164,36 @@ menu_items_data = {
 
 stores.each do |store|
   puts "  🏪 Seeding Menu for #{store.name}..."
-  
+
   menu_items_data.each do |category_key, items|
     category_name = category_names[category_key] || category_key.humanize.upcase
-    
+
     category = store.categories.find_or_create_by!(name: category_name)
-    
+
     items.each do |item_data|
       # Generate a placeholder image URL based on the item name
       # In production, you would replace this with real S3/Cloudinary URLs
       slug = item_data[:name].downcase.gsub(' ', '-')
       image_url = "https://trueblack-assets.com/menu/#{slug}.jpg"
 
-      category.menu_items.find_or_create_by!(name: item_data[:name]) do |item|
+      category.menu_items.find_or_initialize_by(name: item_data[:name]).tap do |item|
         item.description = item_data[:description]
         item.price = item_data[:price]
         item.image_url = image_url
         item.is_available = true
+        
+        # Determine if veg or non-veg
+        # Simple logic: if name/description contains chicken, egg, ham, pepperoni, etc -> non-veg
+        # But exclude 'eggless'
+        non_veg_keywords = ['chicken', 'egg', 'ham', 'pepperoni', 'bacon', 'fish', 'prawn', 'shrimp']
+        text_to_check = "#{item_data[:name]} #{item_data[:description]}".downcase
+        
+        is_non_veg = non_veg_keywords.any? do |keyword| 
+          text_to_check.include?(keyword) && !text_to_check.include?('eggless')
+        end
+        
+        item.is_veg = !is_non_veg
+        item.save!
       end
     end
   end

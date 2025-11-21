@@ -5,7 +5,7 @@ module Api
         menu_item = MenuItem.find(params[:id])
         render json: menu_item
       rescue ActiveRecord::RecordNotFound
-        render json: { error: 'Menu item not found' }, status: :not_found
+        render json: { error: "Menu item not found" }, status: :not_found
       end
     end
   end
