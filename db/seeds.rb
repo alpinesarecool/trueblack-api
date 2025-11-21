@@ -4,6 +4,19 @@
 puts "🌱 Starting Database Seed..."
 
 # ==========================================
+# 0. ADMIN USER
+# ==========================================
+if AdminUser.count.zero?
+  AdminUser.create!(
+    email: 'admin@trueblack.com',
+    password: 'TrueBlack2024!',
+    password_confirmation: 'TrueBlack2024!'
+  )
+  puts "✅ Created admin user: admin@trueblack.com / TrueBlack2024!"
+end
+
+
+# ==========================================
 # 1. STORES
 # ==========================================
 stores_data = [
@@ -241,3 +254,4 @@ stores.each do |store|
 end
 
 puts "✅ Database Seed Completed Successfully!"
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
