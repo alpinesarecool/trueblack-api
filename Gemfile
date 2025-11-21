@@ -16,6 +16,13 @@ gem "bcrypt", "~> 3.1.7"
 gem "graphql"
 gem "graphiql-rails"
 
+# Admin Panel
+gem "devise"
+gem "activeadmin", github: 'activeadmin/activeadmin'  # Use latest from git for Rails 8 support
+gem "sassc-rails"
+
+
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
