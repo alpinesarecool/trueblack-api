@@ -1,7 +1,7 @@
 module Api
   module V1
     class OrdersController < ApplicationController
-      protect_from_forgery with: :null_session
+
 
       # POST /api/v1/orders
       # Expected JSON payload:
@@ -26,7 +26,7 @@ module Api
             )
           end
         end
-        render json: { id: @order.id, created_at: @order.created_at }, status: :created
+        render json: { id: @order.id, created_at: @order.created_at, status: @order.status }, status: :created
       rescue ActiveRecord::RecordInvalid => e
         render json: { error: e.message }, status: :unprocessable_entity
       end

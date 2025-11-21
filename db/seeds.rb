@@ -44,7 +44,8 @@ category_names = {
   'croissant_sandwich' => 'CROISSANT SANDWICH',
   'mains' => 'MAINS',
   'bagels' => 'BAGELS',
-  'sides' => 'SIDES'
+  'sides' => 'SIDES',
+  'marketplace' => 'MARKETPLACE'
 }
 
 menu_items_data = {
@@ -155,6 +156,16 @@ menu_items_data = {
     { name: 'Classic Fries', description: 'Crispy golden fries', price: 250 },
     { name: 'Peri Peri Fries', description: 'Spicy peri peri fries', price: 280 },
     { name: 'Cheesy Peri Peri Fries', description: 'Cheesy spicy peri peri fries', price: 330 }
+  ],
+  'marketplace' => [
+    { name: 'Coffee Scrub', description: '100% Arabica coffee body scrub', price: 550 },
+    { name: 'Dune Mug', description: 'Handcrafted ceramic mug', price: 850 },
+    { name: 'Dune Cup', description: 'Artisan ceramic cup', price: 650 },
+    { name: 'Kinto Tumbler Beige', description: 'Insulated travel tumbler', price: 1250 },
+    { name: 'Kinto Tumbler Steel', description: 'Stainless steel tumbler', price: 1450 },
+    { name: 'Moonlight Cup', description: 'Elegant ceramic cup', price: 750 },
+    { name: 'True Mocha Soap', description: 'Coffee & cocoa natural soap', price: 350 },
+    { name: 'Valencia Orange Soap', description: 'Valencia orange natural soap', price: 350 }
   ]
 }
 
