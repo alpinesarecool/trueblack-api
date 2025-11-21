@@ -1,0 +1,19 @@
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/erb-6.0.0/ext/erb/escape
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251121-15127-514ab2 sitelibdir\=./.gem.20251121-15127-514ab2 clean
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251121-15127-514ab2 sitelibdir\=./.gem.20251121-15127-514ab2
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251121-15127-514ab2 sitelibdir\=./.gem.20251121-15127-514ab2 install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20251121-15127-514ab2/erb
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251121-15127-514ab2 sitelibdir\=./.gem.20251121-15127-514ab2 clean
