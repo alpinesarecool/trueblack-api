@@ -171,10 +171,51 @@ stores.each do |store|
     category = store.categories.find_or_create_by!(name: category_name)
 
     items.each do |item_data|
-      # Generate a placeholder image URL based on the item name
-      # In production, you would replace this with real S3/Cloudinary URLs
+      # Map item names to filenames where they differ from the slug
+      # Based on storeMenus.js and actual files
+      filename_mapping = {
+        'True Mocha Hot' => 'true-mocha.jpg',
+        'Berry Bowl' => 'berry.jpg',
+        'Chocolate Bowl' => 'chocolate.jpg',
+        'Green Bowl' => 'green.jpg',
+        'Yogurt Bowl' => 'yogurt.jpg',
+        'True Chocolate Hot' => 'hot-chocolate.jpg',
+        'Kombu INF Iced' => 'item-default.jpg', # Placeholder
+        'Orange Refresher Iced' => 'item-default.jpg',
+        'Chamomile Tea' => 'item-default.jpg',
+        'Turmeric Ginger' => 'item-default.jpg',
+        'Blossom Chai' => 'item-default.jpg',
+        'Watermelon Juice' => 'item-default.jpg',
+        'Orange Juice' => 'item-default.jpg',
+        'Red Pepper Hummus Toast' => 'item-default.jpg',
+        'Tumago Egg Toast' => 'item-default.jpg',
+        'Red Sauce Pasta' => 'item-default.jpg',
+        'White Sauce Pasta' => 'item-default.jpg',
+        'Pesto Aglio Olio Pasta' => 'item-default.jpg',
+        'Pesto Grilled Chicken' => 'item-default.jpg',
+        'Pesto Grilled Paneer' => 'item-default.jpg',
+        'Jalapeno Cream Cheese' => 'item-default.jpg',
+        'Classic Cream Cheese' => 'item-default.jpg',
+        'Japanese Style' => 'item-default.jpg',
+        'Scrambled Egg' => 'item-default.jpg',
+        'Cheesy Peri Peri Fries' => 'item-default.jpg'
+      }
+
+      # Default slug strategy: "Long Black" -> "long-black.jpg"
       slug = item_data[:name].downcase.gsub(' ', '-')
-      image_url = "https://trueblack-assets.com/menu/#{slug}.jpg"
+      filename = filename_mapping[item_data[:name]] || "#{slug}.jpg"
+      
+      # Check if file exists in public/images/menu (relative to Rails root)
+      # Note: In production, this check runs on the server filesystem
+      file_path = Rails.root.join('public', 'images', 'menu', filename)
+      
+      # Base URL for the production server
+      base_url = "https://trueblack-api-production.up.railway.app/images/menu"
+      
+      # If file exists (or we have a mapping which implies we expect it), use it. 
+      # Otherwise fallback to nil or a default.
+      # For now, we assume if it's in the mapping or the slug matches a file, it's good.
+      image_url = "#{base_url}/#{filename}"
 
       category.menu_items.find_or_initialize_by(name: item_data[:name]).tap do |item|
         item.description = item_data[:description]
