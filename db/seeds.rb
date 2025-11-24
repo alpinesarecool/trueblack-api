@@ -6,22 +6,69 @@ puts "🌱 Starting Database Seed..."
 # ==========================================
 # 1. STORES
 # ==========================================
+# ==========================================
+# 1. STORES
+# ==========================================
 stores_data = [
-  { name: 'Kompally', address: 'Financial District, Kompally, Hyderabad', phone: '+91 98765 43210' },
-  { name: 'Jubilee Hills', address: 'Road No. 36, Jubilee Hills, Hyderabad', phone: '+91 98765 43211' },
-  { name: 'Loft', address: 'HITEC City, Madhapur, Hyderabad', phone: '+91 98765 43212' },
-  { name: 'Film Nagar', address: 'Film Nagar, Jubilee Hills, Hyderabad', phone: '+91 98765 43213' },
-  { name: 'Kokapet', address: 'Financial District, Kokapet, Hyderabad', phone: '+91 98765 43214' }
+  { 
+    name: 'Kompally', 
+    space_name: 'Soft Sand',
+    area: 'Kompally',
+    address: 'Financial District, Kompally, Hyderabad', 
+    phone: '+91 98765 43210',
+    latitude: 17.5367,
+    longitude: 78.4878,
+    hours: '7:00 AM - 11:00 PM'
+  },
+  { 
+    name: 'Jubilee Hills', 
+    space_name: 'Modern Beige',
+    area: 'Jubilee Hills',
+    address: 'Road No. 36, Jubilee Hills, Hyderabad', 
+    phone: '+91 98765 43211',
+    latitude: 17.4326,
+    longitude: 78.4071,
+    hours: '7:00 AM - 11:00 PM'
+  },
+  { 
+    name: 'Loft', 
+    space_name: 'Oak Moss',
+    area: 'Madhapur',
+    address: 'HITEC City, Madhapur, Hyderabad', 
+    phone: '+91 98765 43212',
+    latitude: 17.4483,
+    longitude: 78.3915,
+    hours: '8:00 AM - 12:00 AM'
+  },
+  { 
+    name: 'Film Nagar', 
+    space_name: 'Burnt Earth',
+    area: 'Film Nagar',
+    address: 'Film Nagar, Jubilee Hills, Hyderabad', 
+    phone: '+91 98765 43213',
+    latitude: 17.4134,
+    longitude: 78.4084,
+    hours: '7:00 AM - 11:00 PM'
+  },
+  { 
+    name: 'Kokapet', 
+    space_name: 'Travertine',
+    area: 'Kokapet',
+    address: 'Financial District, Kokapet, Hyderabad', 
+    phone: '+91 98765 43214',
+    latitude: 17.3956,
+    longitude: 78.3323,
+    hours: '7:00 AM - 11:00 PM'
+  }
 ]
 
 stores = []
 stores_data.each do |store_attrs|
-  store = Store.find_or_create_by!(name: store_attrs[:name]) do |s|
-    s.address = store_attrs[:address]
-    s.phone = store_attrs[:phone]
-  end
+  store = Store.find_or_initialize_by(name: store_attrs[:name])
+  store.assign_attributes(store_attrs)
+  store.save!
   stores << store
-  puts "  ✅ Store: #{store.name}"
+  puts "  ✅ Store: #{store.name} (Lat: #{store.latitude}, Long: #{store.longitude})"
 end
 
 # ==========================================
