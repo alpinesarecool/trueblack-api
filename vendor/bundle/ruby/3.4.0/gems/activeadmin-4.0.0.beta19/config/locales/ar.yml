@@ -1,0 +1,148 @@
+---
+ar:
+  active_admin:
+    access_denied:
+      message: غير مصرح لك تنفيذ هذا الإجراء.
+    any: أي
+    batch_actions:
+      action_label: اُختير %{title}
+      button_label: إجراء جماعي
+      default_confirmation: هل أنت متأكّد؟
+      delete_confirmation: هل أنت متأكّد من حذف هذه %{plural_model}؟
+      labels:
+        destroy: حذف
+      selection_toggle_explanation: "(تبديل التحديد)"
+      successfully_destroyed:
+        one: حُذف بنجاح %{model}
+        other: حُذف بنجاح %{count} %{plural_model}
+    blank_slate:
+      content: لا يوجد %{resource_name}
+      link: إنشاء
+    cancel: إلغاء
+    comments:
+      add: إضافة تعليق
+      author: مؤلّف
+      author_missing: المؤلف مجهول
+      author_type: نوع الؤلّف
+      body: المحتوى
+      created_at: أُنشئ
+      delete: حذف تعليق
+      delete_confirmation: هل أنت متأكّد من حذف التعليق؟
+      errors:
+        empty_text: لم يُحفظ التعليق، النص فارغ.
+      no_comments_yet: لا يوجد تعليقات.
+      resource: مدخل
+      resource_type: نوع المصدر
+      title_content: التعليقات (%{count})
+    create_another: انشاء %{model} آخر
+    dashboard: لوحة التحكم
+    delete: حذف
+    delete_confirmation: هل تريد تأكيد الحذف؟
+    delete_model: حذف %{model}
+    details: تفاصيل %{model}
+    devise:
+      change_password:
+        submit: تغير كلمة المرور
+        title: تغير كلمة المرور
+      email:
+        title: البريد الإلكترونيّ
+      links:
+        forgot_your_password: هل نسيت كلمة المرور؟
+        resend_confirmation_instructions: إعادة إرسال تعليمات تأكيد البريد الإلكتروني
+        resend_unlock_instructions: إعادة إرسال تعليمات تنشيط الحساب
+        sign_in: تسجيل الدخول
+        sign_in_with_omniauth_provider: تسجيل الدخول بـ %{provider}
+        sign_up: التسجيل
+      login:
+        remember_me: تذكرني
+        submit: تسجيل الدخول
+        title: تسجيل الدخول
+      password:
+        title: كلمة المرور
+      password_confirmation:
+        title: تأكيد كلمة المرور
+      resend_confirmation_instructions:
+        submit: إعادة ارسال تعليمات تأكيد البريد الإلكتروني
+        title: إعادة ارسال تعليمات تأكيد البريد الإلكتروني
+      reset_password:
+        submit: استرجاع كلمة المرور
+        title: هل نسيت كلمة المرور؟
+      sign_up:
+        submit: تسجيل
+        title: التسجيل
+      subdomain:
+        title: النطاق الفرعي
+      unlock:
+        submit: إعادة إرسال تعليمات تنشيط الحساب
+        title: إعادة إرسال تعليمات تنشيط الحساب
+      username:
+        title: اسم المستخدم
+    download: تحميل
+    edit: تعديل
+    edit_model: تعديل %{model}
+    empty: فارغ
+    filters:
+      buttons:
+        clear: إلغاء الفرز
+        filter: فرز
+      predicates:
+        from: من
+        to: إلى
+    has_many_delete: حذف
+    has_many_new: إضافة %{model} جديد
+    has_many_remove: إزالة
+    index_list:
+      table: جدول
+    logout: تسجيل الخروج
+    move: نقل
+    new_model: "%{model} جديد"
+    next: التالي
+    pagination:
+      empty: لا يوجد %{model}
+      entry:
+        one: مدخل
+        other: مدخلات
+      multiple: عرض <b>%{from}-%{to}</b> من <b>%{total}</b>
+      multiple_without_total: عرض <b>%{from}-%{to}</b>
+      next: التالي
+      one: عرض <b>1</b> من <b>1</b>
+      one_page: عرض <b>كل %{n}</b>
+      per_page: 'لكل صفحة '
+      previous: السابق
+      truncate: "&hellip;"
+    powered_by: بواسطة %{active_admin} %{version}
+    previous: السابق
+    scopes:
+      all: الكل
+    search_status:
+      no_current_filters: بدون فرز
+      title: الفرز الحالي
+      title_with_scope: الفرز الحالي لـ %{name}
+    sidebars:
+      filters: المُرشحات
+      search_status: حالة البحث
+    status_tag:
+      'no': لا
+      unset: غير محدد
+      'yes': نعم
+    toggle_dark_mode: تبديل الوضع الليلي
+    toggle_main_navigation_menu: عرض القائمة الرئيسية
+    toggle_section: عرض القسم
+    toggle_user_menu: عرض قائمة المستخدم
+    view: عرض
+  activerecord:
+    attributes:
+      active_admin/comment:
+        author_type: نوع الكاتب
+        body: المحتوى
+        created_at: وقت الإنشاء
+        namespace: النطاق
+        resource_type: نوع المصدر
+        updated_at: وقت التعديل
+    models:
+      active_admin/comment:
+        one: تعليق
+        other: تعليقات
+      comment:
+        one: تعليق
+        other: تعليقات

@@ -19,6 +19,14 @@ Rails.application.routes.draw do
       resources :stores, only: [ :index, :show ]
       resources :menu_items, only: [ :show ]
       resources :orders, only: [:create, :index]
+      
+      # Admin API routes
+      namespace :admin do
+        resources :stores
+        resources :categories
+        resources :menu_items
+        post 'notifications/send', to: 'notifications#send_notification'
+      end
     end
   end
 end
