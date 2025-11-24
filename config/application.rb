@@ -49,5 +49,8 @@ module TrueblackApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Fallback secret key for production if env var is missing (TEMPORARY FIX)
+    config.secret_key_base = ENV["SECRET_KEY_BASE"] || "3b6e8a1c5d4f2b9a0e7d8c6b5a4f3e2d1c0b9a8e7d6c5b4a3f2e1d0c9b8a7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0e9d8c7b6a5f4e3d2c1b0a9e8d7c6b5a4f"
   end
 end

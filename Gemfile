@@ -6,8 +6,8 @@ gem "puma", ">= 5.0"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
+gem 'fcm'
 
-gem "kamal", require: false
 
 gem "thruster", require: false
 
