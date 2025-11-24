@@ -299,4 +299,4 @@ stores.each do |store|
 end
 
 puts "✅ Database Seed Completed Successfully!"
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+puts "✅ Database Seed Complete!"
