@@ -1,0 +1,19 @@
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.8/ext/stringio
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251124-58913-9tpowc sitelibdir\=./.gem.20251124-58913-9tpowc clean
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251124-58913-9tpowc sitelibdir\=./.gem.20251124-58913-9tpowc
+compiling stringio.c
+linking shared-object stringio.bundle
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251124-58913-9tpowc sitelibdir\=./.gem.20251124-58913-9tpowc install
+/usr/bin/install -c -m 0755 stringio.bundle ./.gem.20251124-58913-9tpowc
+
+current directory: /Users/teja/Desktop/Backend/trueblack-api/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.8/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251124-58913-9tpowc sitelibdir\=./.gem.20251124-58913-9tpowc clean

@@ -1,0 +1,80 @@
+---
+lv:
+  active_admin:
+    any: Jebkurš
+    batch_actions:
+      action_label: "%{title} Selected"
+      button_label: Batch Actions
+      default_confirmation: Vai tiešām vēlaties to darīt?
+      delete_confirmation: Vai tiešām vēlaties dzēst šos %{plural_model}?
+      labels:
+        destroy: Delete
+      selection_toggle_explanation: "(Toggle Selection)"
+      successfully_destroyed:
+        one: Successfully deleted 1 %{model}
+        other: Successfully deleted %{count} %{plural_model}
+    blank_slate:
+      content: Sadaļā '%{resource_name}' nav neviena ieraksta.
+      link: Izveidot jaunu
+    cancel: Atcelt
+    comments:
+      add: Pievienot komentāru
+      author: Autors
+      body: Saturs
+      errors:
+        empty_text: Komentārs netika saglabāts - nekas nav ierakstīts
+      no_comments_yet: Nav neviena komentāra.
+      resource: Resurss
+      title_content: Komentāri (%{count})
+    dashboard: Panelis
+    delete: Dzēst
+    delete_confirmation: Vai Tu tiešām vēlies dzēst?
+    delete_model: Dzēst '%{model}' ierakstu
+    details: Apraksts
+    devise:
+      change_password:
+        submit: Nomainīt savu paroli
+        title: Nomainīt paroli
+      links:
+        forgot_your_password: Aizmirsāt savu paroli?
+        sign_in: pierakstīties
+        sign_in_with_omniauth_provider: Pierakstieties ar %{provider}
+      login:
+        remember_me: atcerēties mani
+        submit: Ielogojaties
+        title: Ielogojaties
+      reset_password:
+        submit: Atjaunotu savu paroli
+        title: Aizmirsāt savu paroli?
+    download: 'Lejuplādēt:'
+    edit: Labot
+    edit_model: Labot '%{model}' ierakstu
+    empty: Tukšs
+    filters:
+      buttons:
+        clear: Novākt filtrus
+        filter: Filtrēt
+    has_many_delete: Dzēst
+    has_many_new: Pievienot jaunu '%{model}' ierakstu
+    has_many_remove: Noņemt
+    logout: Iziet
+    new_model: Pievienot '%{model}' ierakstu
+    next: Nākošā
+    pagination:
+      empty: Nav ierakstu
+      entry:
+        one: ieraksts
+        other: ieraksti
+      multiple: "<b>%{from}&nbsp;-&nbsp;%{to}</b> ieraksti no <b>%{total}</b> kopā"
+      multiple_without_total: "<b>%{from}&nbsp;-&nbsp;%{to}</b>"
+      one: "<b>1</b> ieraksts"
+      one_page: "<b>%{n}</b> ieraksti"
+    powered_by: Powered by %{active_admin} %{version}
+    previous: Iepriekšējā
+    sidebars:
+      filters: Filtri
+    status_tag:
+      'no': Nē
+      unset: Nē
+      'yes': Jā
+    view: Apskatīt

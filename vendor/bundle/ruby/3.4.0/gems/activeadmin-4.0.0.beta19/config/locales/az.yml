@@ -1,0 +1,116 @@
+---
+az:
+  active_admin:
+    access_denied:
+      message: Bunu etmək üçün daxil olmalısınız.
+    any: İstənilən
+    batch_actions:
+      action_label: "%{title} seçilmiş"
+      button_label: Qrup əməliyyatları
+      default_confirmation: Siz bunu etməyinizə əminsiniz?
+      delete_confirmation: Siz %{plural_model} silməyə əminsiniz?
+      labels:
+        destroy: Sil
+      selection_toggle_explanation: "(Hamısını seç / Seçilmişləri sıfırla)"
+      successfully_destroyed:
+        few: 'Uğurla silindi: %{count} %{plural_model}'
+        many: 'Uğurla silindi: %{count} %{plural_model}'
+        one: 'Uğurla silindi: 1 %{model}'
+        other: 'Uğurla silindi: %{count} %{plural_model}'
+    blank_slate:
+      content: "%{resource_name} hələ yoxdur."
+      link: Yarat
+    cancel: İmtina
+    comments:
+      add: Şərh əlavə et
+      author: Müəllif
+      author_missing: Naməlum
+      author_type: Müəllifin tipi
+      body: Mətn
+      created_at: Yaranma tarixi
+      delete: Şərhi sil
+      delete_confirmation: Siz bu şərhi silmək istədiyinizdən əminsiniz?
+      errors:
+        empty_text: Şərh yadda saxlanılmadı, mətn boş ola bilməz.
+      no_comments_yet: Hələ şərhlər yoxdur.
+      resource: Resurs
+      resource_type: Resursun tipi
+      title_content: Şərhlər (%{count})
+    dashboard: İdarəetmə paneli
+    delete: Sil
+    delete_confirmation: Siz bunu silmək istədiyinizdən əminsiniz?
+    delete_model: "%{model} sil"
+    details: "%{model} haqqında"
+    devise:
+      change_password:
+        submit: Şifrəni dəyiş
+        title: Şifrənin dəyişdirilməsi
+      email:
+        title: E-poçt
+      links:
+        forgot_your_password: Şifrəni unutmusunuz?
+        resend_confirmation_instructions: Aktivləşdirmə ismarışını yenidən göndərilməsi
+        resend_unlock_instructions: Blokdan çıxarma üzrə təlimatı yenidən göndərilməsi
+        sign_in: Giriş
+        sign_in_with_omniauth_provider: "%{provider} vasitəsilə daxil ol"
+        sign_up: Qeydiyyat
+      login:
+        remember_me: Məni yadda saxla
+        submit: Daxil ol
+        title: Giriş
+      password:
+        title: Şifrə
+      resend_confirmation_instructions:
+        submit: Aktivləşdirmə ismarışını yenidən göndərmək
+        title: Aktivləşdirmə ismarışını yenidən göndərmək
+      reset_password:
+        submit: Şifrəni sıfırla
+        title: Şifrəni unutmusunuz?
+      sign_up:
+        submit: Qeydiyyatdan keç
+        title: Qeydiyyat
+      subdomain:
+        title: Subdomen
+      unlock:
+        submit: Blokdan çıxarma üzrə təlimatı yenidən göndərmək
+        title: Blokdan çıxarma üzrə təlimatı yenidən göndərmək
+      username:
+        title: İstifadəçi adı
+    download: 'Yüklənmə:'
+    edit: Dəyiş
+    edit_model: "%{model} dəyiş"
+    empty: Boş
+    filters:
+      buttons:
+        clear: Təmizlə
+        filter: Filtrlə
+    has_many_delete: Sil
+    has_many_new: "%{model} əlavə et"
+    has_many_remove: Yığışdır
+    index_list:
+      table: Cədvəl
+    logout: Çıxış
+    new_model: "%{model} yarat"
+    next: İrəli
+    pagination:
+      empty: "%{model} tapılmadı"
+      entry:
+        few: yazı
+        many: yazı
+        one: yazı
+        other: yazı
+      multiple: 'Nəticə: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> <b>%{total}</b>'
+      multiple_without_total: 'Nəticə: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>'
+      one: 'Nəticə: <b>1</b> %{model}'
+      one_page: 'Nəticə: <b>%{n}</b> %{model}'
+    powered_by: Работает на %{active_admin} %{version}
+    previous: Geri
+    search_status:
+      no_current_filters: Heç biri
+    sidebars:
+      filters: Filterlə
+      search_status: Axtarışın statusu
+    status_tag:
+      'no': Xeyr
+      'yes': Bəli
+    view: Aç

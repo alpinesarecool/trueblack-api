@@ -1,0 +1,112 @@
+---
+mk:
+  active_admin:
+    access_denied:
+      message: Немате овластување да ја извршите оваа активност.
+    any: Било кој
+    batch_actions:
+      action_label: "%{title} го селектираното"
+      button_label: Групни активности
+      default_confirmation: Дали сте сигурни?
+      delete_confirmation: Дали сте сигурни дека сакате да ги избришете %{plural_model}?
+      labels:
+        destroy: Избриши
+      selection_toggle_explanation: "(Toggle Selection)"
+      successfully_destroyed:
+        one: Успешно е избришан 1 %{model}
+        other: Успешно се избришани %{count} %{plural_model}
+    blank_slate:
+      content: Не се креирани записи од типот на %{resource_name}.
+      link: Креирај нов
+    cancel: Откажи
+    create_another: Креирај нов %{model}
+    dashboard: Почетна
+    delete: Избриши
+    delete_confirmation: Дали сте сигурни дека сакате да го избришете записот?
+    delete_model: Избриши %{model}
+    details: Детали за %{model}
+    devise:
+      change_password:
+        submit: Промени лозинка
+        title: Променете ја лозинката
+      email:
+        title: Е-маил
+      links:
+        forgot_your_password: Ја заборавивте Вашата лозинка?
+        resend_confirmation_instructions: Повторно испрати инструкции за потврдување на профил
+        resend_unlock_instructions: Повторно испрати инструкции за отклучување на профил
+        sign_in: Најави се
+        sign_in_with_omniauth_provider: Најави се со %{provider}
+        sign_up: Креирај профил
+      login:
+        remember_me: Запомни ме
+        submit: Најави се
+        title: Најави се
+      password:
+        title: Лозинка
+      password_confirmation:
+        title: Потврди Лозинка
+      resend_confirmation_instructions:
+        submit: Инспрати инструкции
+        title: Повторно испраќање на инструкции за потврдување на профил
+      reset_password:
+        submit: Промени лозинка
+        title: Ја заборавивте Вашата лозинка?
+      sign_up:
+        submit: Креирај
+        title: Креирај профил
+      unlock:
+        submit: Испрати инструкции
+        title: Повторно испраќање на инструкции за отклучување на профил
+      username:
+        title: Корисничко име
+    download: 'Преземи во понудените формати:'
+    edit: Измени
+    edit_model: Измени %{model}
+    empty: Празно
+    filters:
+      buttons:
+        clear: Исчисти филтри
+        filter: Пребарај
+      predicates:
+        from: Од
+        to: До
+    has_many_delete: Избриши
+    has_many_new: Додај нов %{model}
+    has_many_remove: Отстрани
+    index_list:
+      table: Табела
+    logout: Одјави се
+    move: Премести
+    new_model: Додај нов %{model}
+    next: Следно
+    pagination:
+      empty: Нема пронајдени записи за %{model}
+      entry:
+        one: запис
+        other: записи
+      multiple: Прикажани %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> од вкупно <b>%{total}</b>
+      multiple_without_total: Прикажани %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>
+      one: Прикажан <b>1</b> %{model}
+      one_page: Прикажани <b>сите %{n}</b> %{model}
+      per_page: 'Прикази на записи по страна:'
+    powered_by: Овозможено од %{active_admin} %{version}
+    previous: Претходно
+    search_status:
+      no_current_filters: Моментално нема филтри
+    sidebars:
+      filters: Филтри за пребарување
+      search_status: Резултати од пребарување
+    status_tag:
+      'no': Не
+      unset: Не
+      'yes': Да
+    view: Прегледај
+  activerecord:
+    models:
+      active_admin/comment:
+        one: Коментар
+        other: Коментари
+      comment:
+        one: Коментар
+        other: Коментари

@@ -299,3 +299,4 @@ stores.each do |store|
 end
 
 puts "✅ Database Seed Completed Successfully!"
+puts "✅ Database Seed Complete!"
